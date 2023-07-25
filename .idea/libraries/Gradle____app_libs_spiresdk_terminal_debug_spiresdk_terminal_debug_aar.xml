@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/spiresdk-terminal-debug/spiresdk-terminal-debug.aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/dae05601790525118fef8153b24e3e28/transformed/jetified-spiresdk-terminal-debug/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/dae05601790525118fef8153b24e3e28/transformed/jetified-spiresdk-terminal-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dae05601790525118fef8153b24e3e28/transformed/jetified-spiresdk-terminal-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dae05601790525118fef8153b24e3e28/transformed/jetified-spiresdk-terminal-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TransactionManagementActivity">
+
+    <include
+        android:id="@+id/include"
+        layout='@layout/custom_back_ground_mainpage'
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/custom_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_marginTop="@dimen/header_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            tools:layout_editor_absoluteX="8dp">
+            <TextView
+                android:id="@+id/tvTransactionFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_date"
+                style="@style/text_label"
+                android:textColor="#CCCCCC"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:background="@drawable/field_background_white">
+                <TextView
+                    android:id="@+id/txtTransactionMnFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="01/01/2021"
+                    style="@style/text_normal"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTransactionTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/to_date"
+                android:layout_marginRight="12dp"
+                style="@style/text_label"
+                android:textColor="#CCCCCC"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:background="@drawable/field_background_white">
+                <TextView
+                    android:id="@+id/txtTransactionMnToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="14/04/2021"
+                    style="@style/text_normal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@drawable/field_background_white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="8dp">
+
+                <EditText
+                    android:id="@+id/edTransactionSearch"
+                    style="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:ems="10"
+                    android:hint="@string/input_card_or_phone_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="@color/White"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                >
+
+                <TextView
+                    android:id="@+id/btnTransactionMnSearch"
+                    style="@style/button_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/outline_search_24"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/search_title"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/lyTransactionManagementSwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/pbTransactionsLoadMore"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/pbTransactionsLoadMore"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/White"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+    <include
+        android:id="@+id/include"
+        layout='@layout/custom_back_ground_mainpage'
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/header"
+        layout="@layout/custom_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/header_margin_top"
+        android:background="@drawable/page_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llCustomerInfo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="visible">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtRegisterFullName"-->
+<!--                style="@style/text_label"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/header_title_text_size"-->
+<!--                android:text="@string/enter_customer_name" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rlRegisterFirstName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/edit_text_height"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@drawable/field_border"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:paddingEnd="8dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/edRegisterFirstName"-->
+<!--                    style="@style/text_normal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/Transparent"-->
+<!--                    android:cursorVisible="true"-->
+<!--                    android:ems="10"-->
+<!--                    android:focusable="auto"-->
+<!--                    android:hint="@string/first_name"-->
+<!--                    android:inputType="text"-->
+<!--                    android:textColor="@color/textBlack"-->
+<!--                    android:textIsSelectable="false" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rlRegisterSecondName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/edit_text_height"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@drawable/field_border"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:paddingEnd="8dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/edRegisterSecondName"-->
+<!--                    style="@style/text_normal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:backgroundTint="@color/Transparent"-->
+<!--                    android:cursorVisible="true"-->
+<!--                    android:ems="10"-->
+<!--                    android:focusable="auto"-->
+<!--                    android:hint="@string/second_name"-->
+<!--                    android:inputType="text"-->
+<!--                    android:textColor="@color/textBlack"-->
+<!--                    android:textIsSelectable="false" />-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/txtRegisterPhone"
+            style="@style/text_label"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_title_text_size"
+            android:layout_marginTop="16dp"
+            android:text="@string/enter_phone_number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_border"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <Spinner
+                    android:id="@+id/snRegisterCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:src="@drawable/ic_arrow_down_24" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlRegisterPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/field_border"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <EditText
+                    android:id="@+id/edRegisterPhoneNumber"
+                    style="@style/text_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/Transparent"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:focusable="auto"
+                    android:hint="@string/phone_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/textBlack"
+                    android:textIsSelectable="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="24dp">-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/ckbRegisterAccept"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="@string/desc_accept_register" />-->
+            <!--            </RelativeLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|top"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_primary_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false">
+
+
+                <TextView
+                    android:id="@+id/btRegisterSubmit"
+                    style="@style/button_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/buttonDisable"
+                    android:gravity="center"
+                    android:text="@string/register"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

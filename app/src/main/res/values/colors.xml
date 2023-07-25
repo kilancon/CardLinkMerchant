@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#990332</color>
+    <color name="Transparent">#00ffffff</color>
+    <color name="White">#FFFFFFFF</color>
+    <color name="LighterGray">#e6e6e6</color>
+    <color name="transparentBlack">#7f000000</color>
+    <color name="colorXin">#990332</color>
+    <color name="textWithPrimaryDark">#00245d</color>
+    <color name="colorPrimaryDark">#00245d</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorBackgroundDark">#990332</color>
+    <color name="colorBackgroundLight">#990332</color>
+    <color name="btActiveOffer">#33B249</color>
+    <color name="bgActiveOffer">#ffffff</color>
+    <color name="btDeactiveOffer">#D36139</color>
+    <color name="bgDeactiveOffer">#FFE2C7</color>
+    <color name="textPrimary">#FF000000</color>
+<!--    <color name="textPrimary">#FFFFFFFF</color>-->
+    <color name="textSecondary">#00245d</color>
+    <color name="textTertiary">#ffffff</color>
+    <color name="textOther">#990332</color>
+    <color name="textGray">#707070</color>
+    <color name="textActive">#009688</color>
+<!--    <color name="textGray">#CDCDCD</color>-->
+    <color name="textBlack">#FF000000</color>
+    <color name="buttonEnable">#990332</color>
+<!--    <color name="buttonEnable">#720d5d</color>-->
+    <color name="buttonDisable">#C3C3C3</color>
+</resources>

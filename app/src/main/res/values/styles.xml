@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_main">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/keyboard_button_bg</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="text_20_bold_red">
+        <item name="android:textColor">@color/colorXin</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_18_bold_red">
+        <item name="android:textColor">@color/colorXin</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="text_normal">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_label">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_large">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="text_title">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_small">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="button_normal">
+        <item name="android:height">50dp</item>
+        <item name="android:background">@color/buttonEnable</item>
+    </style>
+    <style name="button_primary">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/keyboard_ok_button</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="button_secondary">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/keyboard_ok_button</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_secondary_height</item>
+        <item name="android:textColor">@color/textTertiary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+<!--    <style name="button_secondary_disable">-->
+<!--        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>-->
+<!--        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>-->
+<!--        <item name="android:background">@color/buttonDisable</item>-->
+<!--        <item name="android:paddingTop">12dp</item>-->
+<!--        <item name="android:paddingBottom">12dp</item>-->
+<!--        <item name="android:clickable">true</item>-->
+<!--        <item name="android:layout_width">0dp</item>-->
+<!--        <item name="android:layout_height">@dimen/button_secondary_height</item>-->
+<!--        <item name="android:textSize">16sp</item>-->
+<!--        <item name="android:scaleType">centerInside</item>-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--    </style>-->
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="CustomDialogTheme">
+        <item name="android:windowBackground">@color/Transparent</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/white_roundcorners</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="radioStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#7a7a7a</item>
+        <item name="android:colorControlActivated">#FF9800</item>
+        <item name="android:colorControlHighlight">#FF9800</item>
+    </style>
+    <style name="SplashscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splashscreen</item>
+    </style>
+
+</resources>

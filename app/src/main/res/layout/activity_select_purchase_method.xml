@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelectPurchaseMethodActivity">
+    <include
+        android:id="@+id/include"
+        layout='@layout/custom_back_ground_mainpage'
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        android:id="@+id/header"
+        layout="@layout/custom_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_marginTop="@dimen/header_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:background="@drawable/white_roundcorners">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select the method you want to use to purchase"
+            android:background="@color/colorXin"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardPreventCornerOverlap="false"
+            app:strokeColor="@color/colorXin"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/btGiftcard"
+                style="@style/button_primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/White"
+                android:gravity="center"
+                android:text="Gift Card"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorXin"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="15dp"
+            app:cardPreventCornerOverlap="false"
+            app:strokeColor="@color/colorXin"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/btPhoneQr"
+                style="@style/button_primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/White"
+                android:gravity="center"
+                android:text="Phone/QR code"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorXin"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="15dp"
+            app:cardPreventCornerOverlap="false"
+            app:strokeColor="@color/colorXin"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/btOtpSpend"
+                style="@style/button_primary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/White"
+                android:gravity="center"
+                android:text="Customer OTP Spend"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorXin"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/purchaseViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/page_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
